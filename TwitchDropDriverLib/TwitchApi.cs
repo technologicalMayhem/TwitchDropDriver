@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using TwitchDropDriverLib.Data;
 
 namespace TwitchDropDriverLib
 {
@@ -73,35 +73,6 @@ namespace TwitchDropDriverLib
 
             var responseString = await response.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<TResult>(responseString);
-        }
-
-        private class AuthResponse
-        {
-            [JsonPropertyName("access_token")]
-            public string AccessToken { get; set; }
-
-            [JsonPropertyName("expires_in")]
-            public int ExpiresIn { get; set; }
-        }
-
-        public class StreamerData
-        {
-            [JsonPropertyName("user_login")]
-            public string UserLogin { get; set; }
-
-            [JsonPropertyName("game_name")]
-            public string GameName { get; set; }
-
-            public override string ToString()
-            {
-                return UserLogin;
-            }
-        }
-
-        public class Streams
-        {
-            [JsonPropertyName("data")]
-            public List<StreamerData> Data { get; set; }
         }
     }
 }

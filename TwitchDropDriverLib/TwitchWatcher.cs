@@ -39,7 +39,7 @@ namespace TwitchDropDriverLib
 
                 var streams = await _twitch.GetStreamInfoByUsername(channelsToWatch);
                 var streamersOnline = streams.Data
-                    .Where(streamer => 
+                    .Where(streamer =>
                         channelsToWatch.Contains(streamer.UserLogin.ToLower()) &&
                         streamer.GameName.ToLower() == "rust")
                     .ToList();

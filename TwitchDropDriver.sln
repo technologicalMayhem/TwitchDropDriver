@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitchDropDriverLib", "TwitchDropDriverLib\TwitchDropDriverLib.csproj", "{11B6762A-544C-4F98-BB27-5B49FF8BF33C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{389B1D62-7CD6-4D6D-9D8A-474FD6CDABE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{11B6762A-544C-4F98-BB27-5B49FF8BF33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11B6762A-544C-4F98-BB27-5B49FF8BF33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11B6762A-544C-4F98-BB27-5B49FF8BF33C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{389B1D62-7CD6-4D6D-9D8A-474FD6CDABE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389B1D62-7CD6-4D6D-9D8A-474FD6CDABE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389B1D62-7CD6-4D6D-9D8A-474FD6CDABE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389B1D62-7CD6-4D6D-9D8A-474FD6CDABE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
